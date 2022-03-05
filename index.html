@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Band</title>
+    <link rel="icon" href="data:image/png;base64,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" type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <!-- Begin: Nav -->
+            <ul id="nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#band">Band</a></li>
+                <li><a href="#tour">Tour</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <a href="#">
+                        More
+                        <i class="nav-arrow-down ti-angle-down"></i>
+                    </a>
+                    <ul class="subnav">
+                        <li><a href="#">Merchandise</a></li>
+                        <li><a href="#">Extra</a></li>
+                        <li><a href="#">Media</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- End: Nav -->
+
+            <!-- Begin: Search button -->
+                <div class="search-btn">
+                    <i class="search-icon ti-search"></i>
+                </div>
+
+                <div id="mobile-menu" class="mobile-menu-btn">
+                    <i class="menu-icon ti-menu"></i>
+                </div>
+            <!-- End: Search button -->
+        </div>
+        
+        <div id="slider">
+            <div class="text-content">
+                <h2 class="text-heading">Berlin</h2>
+                <div class="text-description">The atmosphere in Berlin is so incredible</div>
+            </div>
+        </div>
+
+        <div id="content">
+            <!-- About section -->
+            <div id="band" class="content-section">
+                <h2 class="section-heading">LINKIN PARK</h2>
+                <p class="section-sub-heading">We love music</p>
+                <p class="about-text">Linkin Park is an American rock band from Agoura Hills, California. The band's current lineup comprises vocalist/rhythm guitarist/keyboardist Mike Shinoda, lead guitarist Brad Delson, bassist Dave Farrell, DJ/turntablist Joe Hahn and drummer Rob Bourdon, all of whom are founding members. Vocalists Mark Wakefield and Chester Bennington are former members of the band. Categorized as alternative rock, Linkin Park's earlier music spanned a fusion of heavy metal and hip hop, while their later music features more electronica and pop elements.</p>
+                
+                <div class="row member-list">
+                    <div class="col member-item text-center">
+                        <p class="member-name">BradDelson</p>
+                        <img src="./assets/img/member/BradDelson.jpg" alt="BradDelson" class="member-img">
+                    </div>
+
+                    <div class="col member-item text-center">
+                        <p class="member-name">MikeShinoda</p>
+                        <img src="./assets/img/member/MikeShinoda.jpg" alt="MikeShinoda" class="member-img">
+                    </div>
+
+                    <div class="col member-item text-center">
+                        <p class="member-name">ChesterBennington</p>
+                        <img src="./assets/img/member/ChesterBennington.jpg" alt="ChesterBennington" class="member-img">
+                    </div>
+
+                    <div class="col member-item text-center">
+                        <p class="member-name">RobBourdon</p>
+                        <img src="./assets/img/member/RobBourdon.jpg" alt="RobBourdon" class="member-img">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tour section -->
+            <div id="tour" class="tour-section">
+                <div class="content-section">
+                    <h2 class="section-heading text-white">TOUR DATES</h2>
+                    <p class="section-sub-heading text-white">Remember to book your tickets!</p>
+                    
+                    <!-- Tickets -->
+                    <ul class="tickets-list">
+                        <li>September <span class="sold-out">Sold out</span></li>
+                        <li>October <span class="sold-out">Sold out</span></li>
+                        <li>November <span class="quantity">3</span></li>
+                    </ul>
+
+                    <!-- Places -->
+                    <div class="row places-list">
+                        <div class="col place-item s-col-full mt-16">
+                            <img src="./assets/img/places/NewYork.jpg" alt="New York" class="place-img">
+                            <div class="place-body">
+                                <h3 class="place-heading">New York</h3>
+                                <p class="place-time">Fri 27 Nov 2016</p>
+                                <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button href="#" class="btn s-full-width js-buy-ticket">Buy Tickets</button>
+                            </div>
+                        </div>
+
+                        <div class="col place-item s-col-full mt-16">
+                            <img src="./assets/img/places/Paris.jpg" alt="Paris" class="place-img">
+                            <div class="place-body">
+                                <h3 class="place-heading">Paris</h3>
+                                <p class="place-time">Sat 28 Nov 2016</p>
+                                <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button href="#" class="btn s-full-width js-buy-ticket">Buy Tickets</button>
+                            </div>
+                        </div>
+
+                        <div class="col place-item s-col-full mt-16">
+                            <img src="./assets/img/places/SanFrancisco.jpg" alt="San Francisco" class="place-img">
+                            <div class="place-body">
+                                <h3 class="place-heading">San Francisco</h3>
+                                <p class="place-time">Sun 29 Nov 2016</p>
+                                <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button href="#" class="btn s-full-width js-buy-ticket">Buy Tickets</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact section -->
+            <div id="contact" class="content-section">
+                <h2 class="section-heading">CONTACT</h2>
+                <p class="section-sub-heading">Fan? Drop the note!</p>
+
+                <div class="row contact-content">
+                    <div class="col col-half s-col-full contact-info">
+                        <p><i class="ti-location-pin"></i>Chicago, US</p>
+                        <p><i class="ti-mobile"></i>Phone: <a href="tel:+00 1515">+00 151515</a></p>
+                        <p><i class="ti-email"></i>Email: <a href="mailto: mail@mail.com">mail@mail.com</a></p>
+                    </div>
+                    <div class="col col-half s-col-full contact-form">
+                        <form action="">
+                            <div class="row">
+                                <div class="col col-half s-col-full">
+                                    <input type="text" name="" placeholder="Name" required id="" class="form-control">
+                                </div>
+
+                                <div class="col col-half s-col-full s-mt-8">
+                                    <input type="email" name="" placeholder="Email" required id="" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row mt-8">
+                                <div class="col col-full">
+                                    <input type="text" name="" placeholder="Message" required id="" class="form-control">
+                                </div>
+                            </div>
+
+                            <input class="btn pull-right mt-16 s-full-width" type="submit" value="SEND">
+                        </form>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="map-section">
+                <img src="./assets/img/background.jpg" alt="Map">
+            </div>
+        </div>
+
+        <div id="footer">
+            <div class="socials-list">
+                <a href=""><i class="ti-facebook"></i></a>
+                <a href=""><i class="ti-instagram"></i></a>
+                <a href=""><i class="ti-youtube"></i></a>
+                <a href=""><i class="ti-pinterest"></i></a>
+                <a href=""><i class="ti-twitter"></i></a>
+                <a href=""><i class="ti-linkedin"></i></a>
+            </div>
+
+            <p class="copyright">Powered by <a href="">w3.css</a></p>
+        </div>
+    </div>
+
+    <div class="modal js-modal">
+        <div class="modal-container js-modal-container">
+            <div class="modal-close js-modal-close">
+                <i class="ti-close"></i>
+            </div>
+            
+            <header class="modal-header">
+                <i class="ti-bag" style="margin-right: 16px;"></i>
+                Tickets
+            </header>
+
+            <div class="modal-body">
+                <label for="tickets-quantity" class="modal-label">
+                    <i class="ti-shopping-cart"></i>
+                    Tickets, $15 per person
+                </label>
+                <input id="tickets-quantity" type="text" class="modal-input" placeholder="How many?">
+
+                <label for="tickets-email" class="modal-label">
+                    <i class="ti-user"></i>
+                    Send to
+                </label>
+                <input id="tickets-email" type="email" class="modal-input" placeholder="Enter email...">
+            
+                <button id="buy-tickets">
+                    Pay
+                    <i class="ti-check"></i>
+                </button>
+            </div>
+
+            <footer class="modal-footer">
+                <p class="modal-help">Need <a href="">help?</a></p>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        var header = document.getElementById('header');
+        var menu = document.getElementById('mobile-menu');
+        var headerHeight = header.clientHeight;
+
+        //Đóng/mở mobile menu
+        menu.onclick = function() {
+            var isClose = header.clientHeight === headerHeight;
+            if (isClose) {
+                header.style.height = 'auto';
+            } else {
+                header.style.height = null;
+            }
+        }
+
+        //Tư động đóng sau khi chọn menu
+        var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+        for(var i = 0; i < menuItems.length; i++) {
+            var menuItem = menuItems[i];
+
+            menuItem.onclick = function(event) {
+                var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+                if(isParentMenu){
+                    event.preventDefault();
+                } else {
+                    header.style.height = null;
+                }
+            }
+        }
+    </script>
+
+    <!-- Hiển thị modal mua vé -->
+    <script>
+        const buyBtns = document.querySelectorAll('.js-buy-ticket')
+        const modal = document.querySelector('.js-modal')
+        const modalContainer = document.querySelector('.js-modal-container')
+        const modalClose = document.querySelector('.js-modal-close')
+
+        //Hàm hiển thị modal mua vé (thêm class open vào modal)
+        function showBuyTickets(){
+            modal.classList.add('open')
+        }
+
+        //Hàm ẩn modal mua vé(gỡ bỏ class open của modal)
+        function hideBuyTickets(){
+            modal.classList.remove('open')
+        }
+
+        for(const buyBtn of buyBtns) {
+            buyBtn.addEventListener('click', showBuyTickets)
+        }
+
+        modalClose.addEventListener('click', hideBuyTickets)
+
+        modal.addEventListener('click', hideBuyTickets)
+
+        modalContainer.addEventListener('click', function (event) {
+            event.stopPropagation()
+        })
+    </script>
+</body>
+</html>
