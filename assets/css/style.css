@@ -95,7 +95,7 @@ html {
     background-color: black; 
     position: fixed;
     top: 0;
-    z-index: 10000; /*Để cho phần header nổi lên hơn các 
+    z-index: 1; /*Để cho phần header nổi lên hơn các 
     phần khác do phần slider có position relative nên cao 
     hơn header mặc định */
 }
